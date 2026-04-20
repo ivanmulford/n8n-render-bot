@@ -16,5 +16,5 @@ ENV N8N_PROTOCOL=http
 # Expone el puerto que usará n8n
 EXPOSE 5678
 
-# Comando para iniciar n8n
-CMD ["n8n", "start"]
+# Cambio clave: Usar el comando 'n8n start' de forma explícita con npx
+CMD ["npx", "n8n", "start"]
